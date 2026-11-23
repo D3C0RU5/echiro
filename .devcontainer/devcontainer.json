@@ -5,10 +5,10 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/node:2": {
-      "version": "22"
+      "version": "24"
     }
   },
-  "postCreateCommand": "npm ci && cd apps/api && uv sync --locked --python 3.12",
+  "postCreateCommand": "npm install -g @openai/codex@latest && npm ci && cd apps/api && uv sync --locked --python 3.12",
   "forwardPorts": [5173, 8000],
   "portsAttributes": {
     "5173": { "label": "React / Vite" },
@@ -18,7 +18,8 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "openai.chatgpt"
       ],
       "settings": {
         "python.defaultInterpreterPath": "${workspaceFolder}/apps/api/.venv/bin/python"

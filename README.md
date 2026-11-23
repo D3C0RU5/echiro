@@ -4,7 +4,7 @@ Monorepo com API em Python/FastAPI e aplicação web em React/TypeScript/Vite.
 
 ## Dev Container
 
-Abra esta pasta no VS Code com a extensão **Dev Containers** e execute **Dev Containers: Reopen in Container**. A criação do container instala Node.js 22, Python 3.12, `uv` e as dependências dos dois projetos.
+Abra esta pasta no VS Code com a extensão **Dev Containers** e execute **Dev Containers: Reopen in Container**. A criação do container instala Node.js 24 LTS, Python 3.12, `uv` e as dependências dos dois projetos.
 
 Depois, execute `npm run dev:api` e `npm run dev:web` em dois terminais do container. As portas 8000 e 5173 são encaminhadas automaticamente.
 
