@@ -1,0 +1,28 @@
+{
+  "name": "echiro",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "22"
+    }
+  },
+  "postCreateCommand": "npm ci && cd apps/api && uv sync --locked --python 3.12",
+  "forwardPorts": [5173, 8000],
+  "portsAttributes": {
+    "5173": { "label": "React / Vite" },
+    "8000": { "label": "FastAPI" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/apps/api/.venv/bin/python"
+      }
+    }
+  }
+}

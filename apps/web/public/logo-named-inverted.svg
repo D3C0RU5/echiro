@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Echiro - morcego e nome">
+<title>Echiro</title>
+<g transform="translate(38 70) scale(0.43) translate(-306 -507)"><path  fill="#FFFFFF" fill-rule="evenodd" d="M306 507 C407 490 497 546 589 643 L601 589 L622 617 Q644 608 664 617 L686 589 L698 643 C790 546 879 490 973 507 C925 541 869 590 858 642 C804 621 745 650 696 705 L591 705 C542 650 483 621 413 642 C402 590 353 541 306 507 Z M607 638 C611 651 619 658 633 659 C624 650 619 644 607 638 Z M680 638 C668 644 662 650 654 659 C668 657 675 651 680 638 Z" />
+    <path  fill="#FFFFFF" d="M605 723 H685 L645 785 Z" />
+  </g>
+<text x="395" y="191" fill="#FFFFFF" font-family="Lato, DejaVu Sans, sans-serif" font-size="116" font-weight="900" letter-spacing="-2">Echiro</text>
+</svg>
