@@ -9,10 +9,21 @@
     }
   },
   "postCreateCommand": "npm install -g @openai/codex@latest && npm ci && cd apps/api && uv sync --locked --python 3.12",
-  "forwardPorts": [5173, 8000],
+  "forwardPorts": [
+    5173,
+    8000
+  ],
   "portsAttributes": {
-    "5173": { "label": "React / Vite" },
-    "8000": { "label": "FastAPI" }
+    "5173": {
+      "label": "React / Vite",
+      "protocol": "http",
+      "onAutoForward": "notify"
+    },
+    "8000": {
+      "label": "FastAPI",
+      "protocol": "http",
+      "onAutoForward": "notify"
+    }
   },
   "customizations": {
     "vscode": {
@@ -22,8 +33,12 @@
         "openai.chatgpt"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/apps/api/.venv/bin/python"
+        "python.defaultInterpreterPath": "${workspaceFolder}/apps/api/.venv/bin/python",
+        "remote.localPortHost": "localhost"
       }
     }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
   }
 }
